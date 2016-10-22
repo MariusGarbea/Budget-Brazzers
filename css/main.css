@@ -11,6 +11,10 @@ body {
   color: white;
 }
 
+.ct-grids line {
+  stroke: white;
+}
+
 .text {
   text-align: center;
   font-size: 50px;

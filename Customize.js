@@ -19,6 +19,13 @@ class Customize extends React.Component {
       apar: 560,
       alt: 630
     }
+    this.submit = this.submit.bind(this);
+  }
+
+  submit() {
+    this.setState({
+      inv: this.state.inv + 1000
+    })
   }
 
   render() {
@@ -43,12 +50,12 @@ class Customize extends React.Component {
       width: '80vw',
       height: '50vh',
     };
-    var type = 'Bar';
     var county = localStorage.getItem("county");
     return (
       <div>
         <p className="text">{county}</p>
-        <ChartistGraph data={data} options={options} type={type} />
+        <ChartistGraph data={data} options={options} type={'Bar'} />
+        <button className="button" onClick={this.submit}>Aplica modificarile</button>
       </div>
     )
   }
