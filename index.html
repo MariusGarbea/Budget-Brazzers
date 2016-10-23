@@ -12,6 +12,8 @@
   <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="index.js"></script>
   <script>
+    var parti = ['Invatamant', 'Transporturi', 'Asigurari', 'Servicii', 'Dezvoltare',
+                'Cultura', 'Ecologie', 'Sanatate', 'Energie', 'Aparare', 'Altele'];
     var activeBar, bars, gridTop, gridBottom;
     document.addEventListener("mousemove", (evt) => {
       if(activeBar) {
@@ -21,6 +23,8 @@
         if(newSVGTop > gridBottom) newSVGTop = gridBottom;
         bars[activeBar].y2.baseVal.value = newSVGTop;
         console.log((gridBottom - newSVGTop)/(gridBottom - gridTop)*1000);
+        document.getElementsByClassName("ct-label ct-horizontal")[activeBar].innerHTML = parti[activeBar]+" <br/> "+
+          Math.floor((gridBottom - newSVGTop)/(gridBottom - gridTop)*1000)+" mld";
       }
     }, false);
     document.addEventListener("mouseup", () => {activeBar = null;document.body.style.cursor = "initial";}, false)
