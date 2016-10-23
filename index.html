@@ -11,5 +11,22 @@
   <div id="app"></div>
   <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
   <script src="index.js"></script>
+  <script>
+    var activeBar, bars;
+    document.addEventListener("mousemove", (evt) => {
+      if(activeBar)
+        bars[activeBar].y2.baseVal.value = evt.clientY -
+            document.getElementsByTagName("svg")[0].getBoundingClientRect().top;
+    }, false);
+    document.addEventListener("mouseup", () => {activeBar = null;}, false)
+    var k = () => {
+      console.log("LOAD")
+      bars = document.getElementsByClassName("ct-series")[0].getElementsByTagName("line");
+      for(var i=0; i<bars.length; i++) {
+        bars[i].onmousedown = Function("activeBar = " + i);
+      }
+    }
+    setTimeout(k, 1000);
+  </script>
 </body>
 </html>
