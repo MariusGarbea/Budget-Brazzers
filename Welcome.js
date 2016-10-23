@@ -20,19 +20,20 @@ class Welcome extends React.Component {
         <div className="centeredtextwrapper">
           <div className="centeredtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             <select style={{display: "block"}} id="judet">
+              <option value="Total">Toata Tara</option>
               <option value="Alba">Alba</option>
               <option value="Arad">Arad</option>
               <option value="Arges">Arges</option>
               <option value="Bacau">Bacau</option>
               <option value="Bihor">Bihor</option>
-              <option value="Bistrita-Nasaud">Bistrita-Nasaud</option>
+              <option value="BistritaNasaud">Bistrita-Nasaud</option>
               <option value="Botosani">Botosani</option>
               <option value="Braila">Braila</option>
               <option value="Brasov">Brasov</option>
               <option value="Bucuresti">Bucuresti</option>
               <option value="Buzau">Buzau</option>
               <option value="Calarasi">Calarasi</option>
-              <option value="Caras-Severin">Caras-Severin</option>
+              <option value="CarasSeverin">Caras-Severin</option>
               <option value="Cluj">Cluj</option>
               <option value="Constanta">Constanta</option>
               <option value="Covasna">Covasna</option>
