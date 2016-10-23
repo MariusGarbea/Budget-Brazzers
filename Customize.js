@@ -53,7 +53,7 @@ class Customize extends React.Component {
     var county = localStorage.getItem("county");
     return (
       <div>
-        <p className="text">{county}</p>
+        <p className="text noselect">{county}</p>
         <ChartistGraph data={data} options={options} type={'Bar'} />
         <button className="button" onClick={this.submit}>Aplica modificarile</button>
       </div>
