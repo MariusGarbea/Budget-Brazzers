@@ -3,6 +3,8 @@ import {hashHistory} from 'react-router';
 
 class Welcome extends React.Component {
 
+  //this is the welcome class for the /welcome page
+  
   constructor() {
     super();
     this.goNext = this.goNext.bind(this);
