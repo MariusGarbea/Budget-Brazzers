@@ -2,6 +2,8 @@ import React from 'react';
 import {Link} from 'react-router';
 import ChartistGraph from 'react-chartist';
 
+//aici am strans datele de pe banipublici.ro :)
+
 var date = {
   Total: [0,0,0,0,0,0,0,0,0,0,0],
   Alba: [228160000,	153320000,	120700000,	101420000,	72400000,	69970000,	28220000,	15850000,	0,	8680000,	8130000],
