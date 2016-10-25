@@ -3,6 +3,8 @@ import {hashHistory, Router, IndexRoute, Route} from 'react-router';
 import Welcome from './Welcome.js';
 import Customize from './Customize.js';
 
+//app component
+
 const App = () => (
   <Router history={hashHistory} >
    <Route path="/" component={Main} >
@@ -11,6 +13,8 @@ const App = () => (
    </Route>
   </Router>
 )
+
+//main component
 
 class Main extends React.Component {
 
